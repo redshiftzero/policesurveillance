@@ -1,5 +1,5 @@
 # policesurveillance
 
-Primer on police surveillance in Chicago
+Primer on police surveillance in Chicago 
 
 

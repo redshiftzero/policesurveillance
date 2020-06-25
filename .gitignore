@@ -57,3 +57,15 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Jekyll
+*.DS_Store*
+*.pyc
+*.swp
+*.gem
+_site/*
+_build/*
+*.rbc
+*.env.
+sass-cache/
+*.css.map

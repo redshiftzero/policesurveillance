@@ -1,0 +1,754 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+body{
+  background-color: #231919;
+  color:#f1f1f1;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  cursor: url('../img/eyecursor.png'), pointer;
+ background-image: url('../img/bg.png');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+   background-size: auto 100vh;
+}
+
+}
+
+body:active{
+ cursor: url('../img/blinkcursor.png'), pointer;
+
+}
+
+nav{
+  background-color: #6c6262;
+  padding: 0 auto;
+  margin:0 auto;
+  height:50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 999;
+}
+
+.nav-title{
+  font-weight:100;
+  position:absolute;
+  padding:.5em 0 0 3em;
+  color:#FFF;
+}
+
+a.nav-title, a.nav-title:visited{
+  color:#FFF;
+  text-decoration: none;
+}
+
+a.nav-title:hover{
+  font-weight:400;
+}
+
+a, a:link, a:visited{
+  text-decoration:none;
+  color:#fff;
+}
+
+#main{padding:3em}
+
+nav img{
+  height:100px;
+  right: 0px;
+  position: absolute;
+}
+
+.tactics-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: top
+}
+
+.tactic-card{
+  /*border:1px solid #aae3ba;*/
+  background: rgb(49,70,73);
+  background: linear-gradient(0deg, rgba(49,70,73,1) 0%, rgba(27,44,45,1) 67%);  
+  box-shadow: 1em 1em #140d0d; 
+  color:#FFF;
+  font-size:.65em;
+  padding:.5em .75em;
+  margin:1.5em;
+  width:25vw;
+  display: flex;
+  flex-direction: column;
+  transition:all .5s;
+}
+
+.tactic-card:hover{
+  box-shadow: 2em 2em #140d0d; 
+  margin:.5em 1.5em 2.5em 1.5em;
+  transition:all .25s;
+
+}
+
+.tactic-card img{
+  width:100%;
+  align-self: center;
+}
+
+.tactic-card h3{
+  font-weight: 100;
+  font-size:2.5vw;
+  line-height: 1em;
+  color: #e9facc;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.home-container{
+  display:flex;
+  flex-direction:column;
+  padding:3em 0 3em 3em
+}
+
+.home-header{
+  display:flex;flex-direction:row;
+}
+
+.home-txt{
+  width: 40vw;
+  float:left;
+  z-index: 20;
+}
+
+.page-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding:3em 0 3em 3em;
+}
+
+.page-container h1{
+  color:#e9facc;
+}
+
+.page-container h2{
+  color:#e9facc;
+  font-weight:100;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(35,25,25,1) 0%, rgba(35,25,25,0) 67%);
+  padding:.25em;
+  border-radius: .25em;
+}
+
+.page-container a, .page-container a:visited {
+  font-weight:600;
+  color:#aae3ba;
+  border-bottom:1px dotted #fff;
+}
+
+.page-container a:hover{
+  color:#52b9b6;  
+  border-bottom:4px solid #fff;
+}
+
+.page-txt{
+  width: 50vw;
+  grid-column-start:1;
+  grid-row-start:1;
+  align-self: start;
+  z-index: 20;
+  margin-right:3em;
+}
+
+.page-img{
+  grid-column-start: 2;
+  grid-row-start:1;
+  display: block;
+}
+
+.page-img img{
+  width:100%;
+}
+.page-supplemental{
+  grid-column-start: 2;
+  grid-row-start:1;
+  padding-top: 100vh;
+  font-weight:100;
+  font-size: .75em;
+  text-align: right;
+}
+.page-supplemental img{
+  width:100%;
+}
+.page-supplemental p{
+  margin-right: 1.5em;
+  line-height: 1.25em;
+
+}
+
+.home-txt a, .home-txt a:link, .home-txt a:visited{
+  color: fff;
+  text-decoration: none;
+  border-bottom:1px dotted #e9facc;
+}
+
+.act a, .act a:link, .act a:visited{
+    color: fff;
+  text-decoration: none;
+  border-bottom:1px dotted #e9facc;
+}
+
+.act a:hover{
+  color: fff;
+  text-decoration: none;
+  border-bottom:4px solid #e9facc;
+}
+
+.home-txt a:hover{
+  color: fff;
+  text-decoration: none;
+  border-bottom:4px solid #e9facc;
+}
+
+.home-head{
+  font-size: 3em; 
+  font-weight:100; 
+  line-height: 1.25em;
+
+}
+
+.home-support{
+  border:1px solid #aae3ba !important;
+  background-color: #314649;
+  box-shadow: .5em .5em #140d0d; 
+  color:#FFF;
+  border-radius:.25em;
+  font-size:.85em;
+  padding:.5em 1.75em;
+  margin:.25em;
+  transition:all .5s;
+}
+
+.home-support:hover{
+  border:1px solid #aae3ba !important;
+  color:#aae3ba;
+  box-shadow: .5em 1em #140d0d; 
+  margin:-.25em 0em 0em 0em;
+  transition:all .25s;
+  }
+
+#lottie{
+  background-color:transparent;
+  width:125%;
+  height:100%;
+  margin: -15% 0 0 -30%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+
+.coptv-container{
+  width:60vw;
+  z-index: 10;
+}
+
+.coptv{
+  width:80vw;
+  position:absolute;
+  right:0;
+}
+
+.coptv-item{
+  width:40vw;
+  position:absolute;
+  right:0;
+}
+
+footer{
+  background-color:#140d0d; 
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content:center;
+  padding-bottom:3em;
+}
+.foot-social{
+  display:flex;
+  flex-direction:row;
+  width:35vw;
+  justify-content:space-around; 
+  margin-top:-1em;
+}
+.foot-social img{
+  height:2.5em;
+}
+.foot-social a:hover{
+  margin-top:-.25em;
+  transition:all .5s;
+}
+
+.foot-mission{
+  width:40vw; 
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  color:#6c6262;
+  font-size: .75em;
+  text-align: center;
+  padding-top:1.5em;
+}
+.foot-support{
+  margin-top:2em;
+  background-color: #6c6262;
+  box-shadow: .5em .5em #140d0d; 
+  color:#140d0d;
+  font-weight:600;
+  border-radius:.25em;
+  font-size:.65em;
+  padding:.05em .75em;
+}
+.foot-support:hover{
+  background-color: #FFF;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (min-width: 1920px) {
+  .home-txt{
+    width: 50vw;
+    float:none;
+    z-index: 20;
+  }
+  .coptv-container{
+  width:50vw;
+  padding:0 auto;
+  margin:0 auto;
+  }
+  .coptv{
+  width:50vw;
+  position:absolute;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .nav-title{font-size:.75em;padding-top:1em;}
+
+  .home-container{
+  display:flex;
+  flex-direction:row;
+  padding:2em;
+  }
+
+  .home-header{
+  display:flex;
+  flex-direction:column-reverse;
+  }
+
+  .home-head{
+  font-size: 2em; 
+  font-weight:100; 
+  line-height: 1.25em;
+  margin-top:-85%;
+  }
+
+
+  #lottie{
+    background-color:transparent;
+    width:100%;
+    height:100%;
+    margin: 0 0 0 0;
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    opacity: 1;
+  }
+
+  .coptv-container{
+  width:100vw;
+  padding:0 auto;
+  margin:0 auto;
+  }
+
+  .coptv{
+  width:100vw;
+  position:absolute;
+  left:-90px;
+  }
+
+  .home-txt{
+    margin-top:320px;
+    width:80vw;
+  }
+
+  .page-container{
+  grid-template-columns: 1fr;
+  padding: 3em;
+  }
+
+  .page-txt{
+  width: 80vw;
+  grid-column-start:1;
+  grid-row-start:2;
+  align-self: start;
+  margin:0 auto;
+  }
+
+  .page-img{
+  grid-column-start: 1;
+  grid-row-start:1;
+  }
+
+  .page-img img{
+  width:80vw;
+  }
+  .page-supplemental{
+  grid-column-start: 1;
+  grid-row-start:3;
+  padding-top: 3em;
+  }
+ 
+
+  .tactics-container{
+  display: flex;
+  flex-direction: column;
+  }
+  .tactic-card{
+  padding:.5em .75em;
+  margin:3em 0;
+  width:80vw;
+  }
+  .tactic-card h3{
+  font-size:12vw;
+  line-height: 1em;
+  }
+  .foot-social{
+    width:85vw;
+  }
+  .foot-mission{
+  width:70vw; 
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  .home-copdesk{
+    width: 100%;
+    margin-top:-50px;
+    transition: all .5s;
+  }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

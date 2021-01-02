@@ -105,8 +105,7 @@ body{
 }
 
 body:active{
- cursor: url('../img/blinkcursor.png'), pointer;
-
+ cursor: url('../img/blinkcursor.png'), crosshair;
 }
 
 nav{
@@ -521,7 +520,7 @@ footer{
 
   .page-container{
   grid-template-columns: 1fr;
-  padding: 3em;
+  padding: 2.5em;
   }
 
   .page-txt{
@@ -529,7 +528,7 @@ footer{
   grid-column-start:1;
   grid-row-start:2;
   align-self: start;
-  margin:0 auto;
+  margin-top:80vw;
   }
 
   .page-img{

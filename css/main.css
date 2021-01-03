@@ -194,7 +194,10 @@ body:active{
 }
 
 
-
+.pageupdate{
+  font-weight: 100;
+  font-size: .75em;
+}
 
 nav{
   background-color: #6c6262;
@@ -206,6 +209,15 @@ nav{
   top: 0;
   left:0;
   z-index: 999;
+}
+
+#mySidenav a{
+  color:#6c6262;
+}
+
+#mySidenav a:hover{
+  color:#fff;
+  background:#000;
 }
 
 .nav-title{
@@ -317,6 +329,11 @@ nav img{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.nav-icon{
+  width:12em;
+  padding-bottom: 1em;
 }
 
 .home-container{
@@ -518,17 +535,21 @@ footer{
 }
 .foot-support{
   margin-top:2em;
-  background-color: #6c6262;
+  background-color: #070505;
   box-shadow: .5em .5em #140d0d; 
-  color:#140d0d;
   font-weight:600;
   border-radius:.25em;
   font-size:.65em;
   padding:.05em .75em;
+  transition: 0.3s;
+}
+
+a.foot-support{
+  color: #a69999;
 }
 .foot-support:hover{
-  background-color: #FFF;
-
+  background-color: #6c6262;;
+  color: #fff;
 }
 
 @media screen and (max-height: 450px) {

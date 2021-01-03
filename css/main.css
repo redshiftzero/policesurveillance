@@ -97,11 +97,9 @@ body{
   line-height: 1.5em;
   cursor: url('../img/eyecursor.png'), pointer;
  background-image: url('../img/bg.png');
- background-repeat: no-repeat;
+ background-repeat: repeat-x;
  background-attachment: fixed;
    background-size: auto 100vh;
-}
-
 }
 
 body:active{

@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+	<Jennifer Helsby> -- <instigator> -- <@lucyparsonslabs>
+	<Freddy Martinez> -- <instantiator> -- <@lucyparsonslabs>
+	<Yoni Maltsman>  -- <inspirator> -- <@lucyparsonslabs>
+	<studiothread> -- <implementor> -- <@lucyparsonslabs> 
+
+# THANKS
+
+    <Lucy Parsons>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
